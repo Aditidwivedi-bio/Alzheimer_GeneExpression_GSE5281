@@ -11,7 +11,7 @@ A clean, interview-ready notebook that downloads **GSE5281** from GEO, performs 
 - GEOparse, pandas, numpy, matplotlib, seaborn, scipy, scikit-learn, statsmodels
 
 ## Files
-- `GSE5281_AD_analysis_polished.ipynb` – main analysis
+- `Alzheimer_GeneExpression_GSE5281.ipynb` – main analysis
 - `outputs/` – generated results (created on run)
 - `data/` – GEO cache (created on run)
 
