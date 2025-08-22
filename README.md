@@ -1,9 +1,9 @@
 Alzheimer’s Disease Gene Expression Analysis (GSE5281)
-📌 Project Overview
+OVERVIEW:
 
 This project focuses on analyzing gene expression data from the GSE5281 dataset (GEO) to identify transcriptional changes associated with Alzheimer’s disease (AD). The goal is to perform preprocessing, differential expression analysis, and biological interpretation to uncover potential biomarkers and pathways relevant to AD.
 
-🎯 Objectives
+OBJECTIVES:
 
 Preprocess and normalize transcriptomic data.
 
@@ -15,7 +15,7 @@ Visualize results using heatmaps, volcano plots, and PCA.
 
 Highlight key genes and pathways associated with Alzheimer’s disease.
 
-🧬 Dataset
+DATASET:
 
 Source: NCBI GEO - GSE5281
 
@@ -23,7 +23,7 @@ Type: Microarray-based gene expression profiling.
 
 Samples: Postmortem brain tissues from Alzheimer’s patients and healthy controls.
 
-⚙️ Tools & Technologies
+TOOLS:
 
 Languages: Python (Pandas, NumPy, SciPy, Matplotlib, Seaborn, Statsmodels, Scikit-learn)
 
@@ -31,7 +31,7 @@ Bioinformatics: GEOparse, gProfiler, Enrichr for pathway enrichment.
 
 Visualization: PCA plots, heatmaps, volcano plots.
 
-📊 Methodology
+METHODOLOGY:
 
 Data Retrieval: Downloaded GSE5281 dataset from GEO.
 
@@ -45,7 +45,7 @@ Functional Analysis: Pathway and GO enrichment of significant genes.
 
 Visualization: Heatmaps, volcano plots, boxplots of selected genes.
 
-🔑 Key Results
+RESULTS:
 
 Identified differentially expressed genes (DEGs) between Alzheimer’s and control brain samples.
 
@@ -53,7 +53,7 @@ Pathway analysis revealed enrichment in neurodegeneration, synaptic signaling, a
 
 Visualizations highlight clear clustering between AD and control groups.
 
-🚀 Future Work
+FUTURE WORK:
 
 Extend to other Alzheimer’s datasets (multi-cohort validation).
 
