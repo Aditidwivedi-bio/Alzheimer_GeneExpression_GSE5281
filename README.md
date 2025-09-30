@@ -1,62 +1,65 @@
-Alzheimer’s Disease Gene Expression Analysis (GSE5281)
-OVERVIEW:
+#  Alzheimer’s Disease Gene Expression Analysis (GSE5281)
 
-This project focuses on analyzing gene expression data from the GSE5281 dataset (GEO) to identify transcriptional changes associated with Alzheimer’s disease (AD). The goal is to perform preprocessing, differential expression analysis, and biological interpretation to uncover potential biomarkers and pathways relevant to AD.
+##  Overview
+This project analyzes gene expression data from the **GSE5281 dataset** (NCBI GEO) to identify transcriptional changes associated with Alzheimer’s disease (AD).  
+The goal is to perform preprocessing, differential expression analysis, and biological interpretation to uncover potential biomarkers and pathways relevant to AD.  
 
-OBJECTIVES:
+---
 
-Preprocess and normalize transcriptomic data.
+##  Objectives
+- Preprocess and normalize transcriptomic data  
+- Identify differentially expressed genes (DEGs) between Alzheimer’s and control samples  
+- Perform statistical tests and corrections for multiple testing  
+- Visualize results using PCA and volcano plots  
+- Highlight key genes and pathways associated with Alzheimer’s disease  
 
-Identify differentially expressed genes (DEGs) between Alzheimer’s and control samples.
+---
 
-Perform statistical tests and corrections for multiple testing.
+##  Dataset
+- **Source**: NCBI GEO – [GSE5281](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE5281)  
+- **Type**: Microarray-based gene expression profiling  
+- **Samples**: Postmortem brain tissues from Alzheimer’s patients and healthy controls  
 
-Visualize results using heatmaps, volcano plots, and PCA.
+---
 
-Highlight key genes and pathways associated with Alzheimer’s disease.
+## 🛠️ Tools & Libraries
+- **Languages**: Python (Pandas, NumPy, SciPy, Matplotlib, Seaborn, Scikit-learn)  
+- **Bioinformatics**: GEOparse  
+- **Visualization**: PCA plots, volcano plots  
 
-DATASET:
+---
 
-Source: NCBI GEO - GSE5281
+##  Methodology
+1. **Data Retrieval** → Downloaded GSE5281 dataset using GEOparse  
+2. **Preprocessing** → Quality check, normalization, missing value handling  
+3. **Exploratory Analysis** → PCA to observe sample grouping  
+4. **Differential Expression Analysis** → log2 fold-change + t-test with multiple testing correction  
+5. **Visualization** → PCA scatter plot, volcano plot of DEGs  
 
-Type: Microarray-based gene expression profiling.
+---
 
-Samples: Postmortem brain tissues from Alzheimer’s patients and healthy controls.
+##  Results
+- Identified differentially expressed genes (DEGs) between Alzheimer’s and control brain samples  
+- PCA revealed separation between AD and Control groups  
+- Volcano plot highlights upregulated and downregulated genes in AD  
 
-TOOLS:
+---
 
-Languages: Python (Pandas, NumPy, SciPy, Matplotlib, Seaborn, Statsmodels, Scikit-learn)
+##  Future Work
+- Extend to other Alzheimer’s datasets (multi-cohort validation)  
+- Integrate multi-omics data (proteomics, methylation)  
+- Build machine learning models for AD vs. Control classification  
 
-Bioinformatics: GEOparse, gProfiler, Enrichr for pathway enrichment.
+---
 
-Visualization: PCA plots, heatmaps, volcano plots.
+##  How to Run
+### Google Colab
+1. Open `Alzheimer_GSE5281.ipynb` in [Google Colab](https://colab.research.google.com/).  
+2. Run all cells (dataset downloads automatically).  
 
-METHODOLOGY:
-
-Data Retrieval: Downloaded GSE5281 dataset from GEO.
-
-Preprocessing: Quality check, normalization, missing value handling.
-
-Exploratory Analysis: PCA and clustering to observe sample grouping.
-
-Differential Expression Analysis: Statistical testing with FDR correction.
-
-Functional Analysis: Pathway and GO enrichment of significant genes.
-
-Visualization: Heatmaps, volcano plots, boxplots of selected genes.
-
-RESULTS:
-
-Identified differentially expressed genes (DEGs) between Alzheimer’s and control brain samples.
-
-Pathway analysis revealed enrichment in neurodegeneration, synaptic signaling, and inflammatory response pathways.
-
-Visualizations highlight clear clustering between AD and control groups.
-
-FUTURE WORK:
-
-Extend to other Alzheimer’s datasets (multi-cohort validation).
-
-Integrate multi-omics data (proteomics, methylation).
-
-Build a machine learning model for classification of AD vs. control.
+### Local Jupyter Notebook
+```bash
+git clone https://github.com/your-username/Alzheimer-Gene-Expression-GSE5281.git
+cd Alzheimer-Gene-Expression-GSE5281
+pip install -r requirements.txt
+jupyter notebook Alzheimer_GSE5281.ipynb
